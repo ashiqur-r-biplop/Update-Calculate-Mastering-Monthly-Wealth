@@ -63,6 +63,34 @@
     font-size: 24px;
 }
 
+.CreditScareBox {
+    display: flex;
+    align-items: center;
+  }
+  
+  .CreditScare {
+    font-size: 24px;
+    gap: 20px;
+  }
+  
+  .CreditScare input {
+    width: 140px;
+    height: 50px;
+    outline: none;
+    padding: 0px 10px;
+    color: #000000;
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    border: 2px transparent;
+    border-radius: 10px 0px;
+    text-align: end;
+    border: 2px solid #b1862f;
+  }
+  
+  .CreditScare input:focus {
+    border: 2px solid #ff06b7;
+    color: #ff06b7;
+  }
 .input-box input {
     width: 200px;
     height: 60px;
@@ -240,10 +268,44 @@ hr {
     margin-top: 20px;
 }
 
+.dropBox-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* responsive design (min-width: 840px) and (max-width: 1150px) */
 @media screen and (min-width: 840px) and (max-width: 1150px) {
     .calculate-topbar-imgbox img {
         width: 250px;
+    }
+
+    .craditBlance {
+        position: absolute;
+        width: 100%;
+        bottom: 15px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .craditBlance p {
+        font-size: 12px !important;
+        margin-top: 25px;
+        margin-right: 5px;
+    }
+
+    .craditBlance .dollar-icon {
+        font-size: 12px !important;
+        margin: 0px !important;
+        display: none;
+    }
+
+    .dropBox-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
     }
 
     .container-calculate {
@@ -283,6 +345,34 @@ hr {
 @media screen and (min-width: 600px) and (max-width: 840px) {
     .calculate-topbar-imgbox img {
         width: 200px;
+    }
+
+    .craditBlance {
+        position: absolute;
+        width: 100%;
+        bottom: 15px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .craditBlance p {
+        font-size: 12px !important;
+        margin-top: 25px;
+        margin-right: 5px;
+    }
+
+    .craditBlance .dollar-icon {
+        font-size: 12px !important;
+        margin: 0px !important;
+        display: none;
+    }
+
+    .dropBox-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
     }
 
     .container-calculate {
@@ -337,6 +427,51 @@ hr {
 @media screen and (min-width: 0px) and (max-width: 600px) {
     .calculation-topbar {
         padding: 20px;
+    }
+
+    .craditBlance {
+        position: absolute;
+        width: 100%;
+        bottom: 15px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .craditBlance p {
+        font-size: 12px !important;
+        margin-top: 25px;
+        margin-right: 5px;
+    }
+
+    .craditBlance .dollar-icon {
+        font-size: 12px !important;
+        margin: 0px !important;
+        display: none;
+    }
+
+    .Balance .dollar-icon {
+        margin-top: 20px !important;
+    }
+
+
+
+
+    .craditBlance input {
+        position: absolute;
+        width: 80px !important;
+        height: auto !important;
+        border-radius: 5px 0px !important;
+        font-size: 12px !important;
+        padding: 6px !important;
+
+    }
+
+    .dropBox-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
     }
 
     .calculate-topbar-imgbox img {
